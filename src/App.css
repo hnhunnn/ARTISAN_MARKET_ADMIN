@@ -1,0 +1,75 @@
+/* admin-web/src/App.css */
+
+/* Reset margin và padding mặc định của body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Tùy chỉnh nhỏ cho Layout của Ant Design */
+.ant-layout-sider-trigger {
+  background-color: #FF6F00 !important; /* Màu cam cho nút collapse */
+  color: white !important;
+}
+
+/* Đảm bảo Ant Design Menu item có padding và màu sắc phù hợp */
+.ant-menu-item {
+  color: #555 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: rgba(255, 111, 0, 0.1) !important; /* Nền cam nhạt khi active */
+  color: #FF6F00 !important; /* Chữ màu cam đậm khi active */
+  border-radius: 8px !important;
+  margin: 8px !important;
+  width: auto !important; /* Để menu item có thể co giãn */
+}
+
+.ant-menu-item-selected .anticon {
+  color: #FF6F00 !important; /* Icon màu cam đậm khi active */
+}
+
+.ant-menu-item:hover {
+  color: #FF6F00 !important;
+}
+.ant-menu-item:hover .anticon {
+  color: #FF6F00 !important;
+}
+
+/* CSS cho Title trong Header */
+.ant-layout-header .ant-typography {
+  margin-bottom: 0 !important;
+}
+
+/* Làm cho Card tiêu đề lớn hơn một chút nếu cần */
+.ant-card-head {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Tùy chỉnh màu nền tổng thể của content */
+.ant-layout-content {
+  background-color: #f7f9fc; /* Một màu nền rất nhạt */
+}
+
+/* Điều chỉnh lại khoảng cách và kích thước của các icon trong Header */
+.ant-layout-header .anticon {
+  font-size: 20px; /* Kích thước icon */
+  vertical-align: middle; /* Căn giữa icon với text nếu có */
+}
+
+/* Điều chỉnh tiêu đề chính trong Sider khi không collapsed */
+.ant-layout-sider-children .ant-typography.ant-typography-h4 {
+  white-space: nowrap; /* Đảm bảo không xuống dòng */
+  overflow: hidden; /* Ẩn nếu tràn */
+  text-overflow: ellipsis; /* Thêm dấu ... nếu tràn */
+}
